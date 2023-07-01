@@ -10,8 +10,8 @@ youtubeの予定をグーグルカレンダーにいれるやつ
 # デプロイ方法
 - ${GCPのprojectid}-live-to-calendar-srcs　という名前のバケットを作っておく
 
-deployments/terraform/dev/variables.tfのfunctionにいれたいチャンネルの情報入れる
-function.configuration配列ふやしたら複数人分実行できる
+- deployments/terraform/dev/variables.tfのfunctionにいれたいチャンネルの情報入れる
+  - function.configuration配列ふやしたら複数人分Cloud Functionsができる
 
 - channelid　youtubeのチャンネルID
 - name CloudFunctionsの名前
@@ -26,7 +26,7 @@ $ docker run -it -v C:\Users\user\go\ytlivetogooglecalneder:/go/ytlivegooglecale
 
 variables.tfにいれたGCPのSecret Manager名と同じ名前のSecetをつくる
 - ytlive-to-calendar-sa-key
-terraform applyしたときにできたサービスアカウントのJSONKEYをそのままいれる
+  - terraform applyしたときにできたサービスアカウントのJSONKEYをそのままいれる
 ```
 {
   "type": "service_account",
@@ -36,7 +36,7 @@ terraform applyしたときにできたサービスアカウントのJSONKEYを�
 ```
 というやつ
 - carol-calendar-id
-GOOGLEカレンダーのカレンダーIDをいれる
+  - GOOGLEカレンダーのカレンダーIDをいれる
 ```
 なんか文字@group.calendar.google.com
 ```
