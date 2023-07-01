@@ -1,0 +1,7 @@
+deployments/terraform/dev/.terraform
+deployments/terraform/dev/.terraform*
+deployments/terraform/dev/index.zip
+deployments/terraform/dev/terraform.*
+deployments/terraform/prd/.terraform
+deployments/terraform/prd/.terraform*
+deployments/terraform/prd/index.zip
