@@ -8,6 +8,8 @@ youtubeの予定をグーグルカレンダーにいれるやつ
 - googleカレンダー作っておく
 
 # デプロイ方法
+- ${GCPのprojectid}-live-to-calendar-srcs　という名前のバケットを作っておく
+
 deployments/terraform/dev/variables.tfのfunctionにいれたいチャンネルの情報入れる
 function.configuration配列ふやしたら複数人分実行できる
 
